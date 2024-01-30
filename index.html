@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>GPA Calculator</title>
+		
+		<link rel="stylesheet" type="text/css" href="index_style.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>GPA Calculator</h1>
+			<div class="years">
+				<div>
+					<label for="year">Select Year:</label><br>
+					<select id="year" onchange="updateSemesters()">
+						<option value="1">1st Year</option>
+						<option value="2">2nd Year</option>
+						<option value="3">3rd Year</option>
+						<option value="4">4th Year</option>
+					</select>
+				</div><br><br>
+
+				<div>
+					<label for="semester">Select Semester:</label><br>
+					<select id="semester">
+						<option value="1">Semester 1</option>
+						<option value="2">Semester 2</option>
+					</select>
+				</div><br><br>
+
+				<button><a id="calculatorLink" href="#">Go to Calculator</a></button>
+			</div>
+		</div>
+
+		<script>
+			function updateSemesters() {
+				var yearSelect = document.getElementById("year");
+				var semesterSelect = document.getElementById("semester");
+				semesterSelect.innerHTML = '<option value="1">Semester 1</option><option value="2">Semester 2</option>';
+				redirectToCalculator();
+			}
+
+			function redirectToCalculator() {
+				var year = document.getElementById("year").value;
+				var semester = document.getElementById("semester").value;
+				var redirectSemester = (year - 1) * 2 + parseInt(semester);
+				var calculatorURL = "Semester " + redirectSemester + " GPA Calculator.html";
+				document.getElementById("calculatorLink").href = calculatorURL;
+			}
+			window.onload = redirectToCalculator;
+			document.getElementById("semester").addEventListener("change", redirectToCalculator);
+			document.getElementById("year").addEventListener("change", redirectToCalculator);
+		</script>
+	</body>
+</html>
+
+
