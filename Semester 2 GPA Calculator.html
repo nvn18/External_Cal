@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Semester 2 GPA Calculator</title>
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>GPA Calculator</h1>
+			<div class="semester">
+				<h2>Semester 2</h2>
+				<div class="subject">
+					<label for="S1">Mathematics - 2 (CS121)</label>
+					<select name="S1" id="S1" required>
+					<br></br>
+						<option value="" disabled selected>Select your Grade</option>
+						<option value="10">A+</option>
+						<option value="9">A</option>
+						<option value="8">B</option>
+						<option value="7">C</option>
+						<option value="6">D</option>
+						<option value="5">E</option>
+						<option value="0">F</option>
+					</select>
+					
+					<label for="S2">Engineering Chemistry (CS122)</label>
+					<select name="S2" id="S2" required>
+					<br></br>
+						<option value="" disabled selected>Select your Grade</option>
+						<option value="10">A+</option>
+						<option value="9">A</option>
+						<option value="8">B</option>
+						<option value="7">C</option>
+						<option value="6">D</option>
+						<option value="5">E</option>
+						<option value="0">F</option>
+					</select>
+					
+					<label for="S3">Digital Electronics (CS123)</label>
+					<select name="S3" id="S3" required>
+					<br></br>
+						<option value="" disabled selected>Select your Grade</option>
+						<option value="10">A+</option>
+						<option value="9">A</option>
+						<option value="8">B</option>
+						<option value="7">C</option>
+						<option value="6">D</option>
+						<option value="5">E</option>
+						<option value="0">F</option>
+					</select>
+					
+					<label for="S4">English for Communication Skills (CS124)</label>
+					<select name="S4" id="S4" required>
+					<br></br>
+						<option value="" disabled selected>Select your Grade</option>
+						<option value="10">A+</option>
+						<option value="9">A</option>
+						<option value="8">B</option>
+						<option value="7">C</option>
+						<option value="6">D</option>
+						<option value="5">E</option>
+						<option value="0">F</option>
+					</select>
+					
+					<label for="S6">Programming in Python (CS125)</label>
+					<select name="S5" id="S5" required>
+					<br></br>
+						<option value="" disabled selected>Select your Grade</option>
+						<option value="10">A+</option>
+						<option value="9">A</option>
+						<option value="8">B</option>
+						<option value="7">C</option>
+						<option value="6">D</option>
+						<option value="5">E</option>
+						<option value="0">F</option>
+					</select>
+					
+					<label for="S6">Engineering Chemistry Lab (CS161)</label>
+					<select name="S6" id="S6" required>
+					<br></br>
+						<option value="" disabled selected>Select your Grade</option>
+						<option value="10">A+</option>
+						<option value="9">A</option>
+						<option value="8">B</option>
+						<option value="7">C</option>
+						<option value="6">D</option>
+						<option value="5">E</option>
+						<option value="0">F</option>
+					</select>
+					
+					<label for="S7">Programming in Python Lab (CS162)</label>
+					<select name="S7" id="S7" required>
+					<br></br>
+						<option value="" disabled selected>Select your Grade</option>
+						<option value="10">A+</option>
+						<option value="9">A</option>
+						<option value="8">B</option>
+						<option value="7">C</option>
+						<option value="6">D</option>
+						<option value="5">E</option>
+						<option value="0">F</option>
+					</select>
+					
+					<label for="S8">Computer Engineering Workshop (CS163)</label>
+					<select name="S8" id="S8" required>
+					<br></br>
+						<option value="" disabled selected>Select your Grade</option>
+						<option value="10">A+</option>
+						<option value="9">A</option>
+						<option value="8">B</option>
+						<option value="7">C</option>
+						<option value="6">D</option>
+						<option value="5">E</option>
+						<option value="0">F</option>
+					</select>
+					
+					<label for="S9">English Language Communication Skills Lab(CS164)</label>
+					<select name="S9" id="S9" required>
+					<br></br>
+						<option value="" disabled selected>Select your Grade</option>
+						<option value="10">A+</option>
+						<option value="9">A</option>
+						<option value="8">B</option>
+						<option value="7">C</option>
+						<option value="6">D</option>
+						<option value="5">E</option>
+						<option value="0">F</option>
+					</select>
+
+					<label for="S10">Environmental Science (CSMC2)</label>
+					<select name="S10" id="S10" required>
+					<br></br>
+						<option value="" disabled selected>Select your Grade</option>
+						<option value="10">A+</option>
+						<option value="9">A</option>
+						<option value="8">B</option>
+						<option value="7">C</option>
+						<option value="6">D</option>
+						<option value="5">E</option>
+						<option value="0">F</option>
+					</select>
+					<label for="prevYearCGPA">Previous Year CGPA:</label>
+                    <input type="number" id="prevYearCGPA" required step="0.01">
+					<button onclick="calculateSem2GPA()">Calculate SGPA</button>
+				<p class="result" id="resultText" style="display: none;">Your SGPA is: <span id="sgpa"></span></p>
+				<p class="result" id="prevYearMessage" style="display: none;">Your CGPA is:<span id="prevYearCGPA"></p>
+            <button id="returnHomeButton" style="display: none;"><a href="index.html">Return To Home</a></button>
+				</div>
+			</div>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+</html>
