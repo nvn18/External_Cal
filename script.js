@@ -64,7 +64,7 @@ GPA /= tot_cred;
 
 output.innerHTML = GPA.toFixed(2);
 
-const CGPA = (GPA+prevYearCGPA)/2;
+const CGPA = (parseFloat(prevYearCGPA)*1+GPA)/2;
 
 
 document.getElementById("resultText").style.display = "block";
@@ -107,7 +107,7 @@ function calculateSem3GPA()
 	
 	output.innerHTML = GPA.toFixed(2);
 
-	const CGPA = (GPA+prevYearCGPA)/2;
+	const CGPA = (parseFloat(prevYearCGPA)*2+GPA)/3;
 
 
 	document.getElementById("resultText").style.display = "block";
@@ -149,7 +149,7 @@ function calculateSem4GPA()
 	
 	output.innerHTML = GPA.toFixed(2);
 
-	const CGPA = (GPA+prevYearCGPA)/2;
+	const CGPA = (parseFloat(prevYearCGPA)*3+GPA)/4;
 
 
 	document.getElementById("resultText").style.display = "block";
@@ -190,7 +190,7 @@ function calculateSem5GPA()
 	
 	output.innerHTML = GPA.toFixed(2);
 
-	const CGPA = (GPA+prevYearCGPA)/2;
+	const CGPA = (parseFloat(prevYearCGPA)*4+GPA)/5;
 
 
 	document.getElementById("resultText").style.display = "block";
@@ -230,7 +230,7 @@ function calculateSem6GPA()
 	
 	output.innerHTML = GPA.toFixed(2);
 
-	const CGPA = (GPA+prevYearCGPA)/2;
+	const CGPA = (parseFloat(prevYearCGPA)*5+GPA)/6;
 
 
 	document.getElementById("resultText").style.display = "block";
@@ -269,7 +269,7 @@ function calculateSem7GPA()
 	
 	output.innerHTML = GPA.toFixed(2);
 
-	const CGPA = (GPA+prevYearCGPA)/2;
+	const CGPA = (parseFloat(prevYearCGPA)*6+GPA)/7;
 
 
 	document.getElementById("resultText").style.display = "block";
@@ -302,7 +302,7 @@ function calculateSem8GPA()
 	
 	output.innerHTML = GPA.toFixed(2);
 
-	const CGPA = (GPA+prevYearCGPA)/2;
+	const CGPA = (parseFloat(prevYearCGPA)*7+GPA)/8;
 
 
 	document.getElementById("resultText").style.display = "block";
